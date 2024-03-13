@@ -1,10 +1,11 @@
+# ChatGPT Plugin 으로 등록해서 ChatGPT playground에서도 활용 가능하도록 하는 예제 따라해보려 했으나,
+# 'GPTs' 라는 GPT 관련 store 오픈하며 plugin 서비스 제공 중단 상태
+# '.rag/main.py' 파일은 제외하고 이외 src 참고하면 될 듯
+
 import json
 from fastapi import FastAPI, Response
 from models import Query
 from fastapi.middleware.cors import CORSMiddleware
-
-import vectordb
-
 
 app = FastAPI()
 
